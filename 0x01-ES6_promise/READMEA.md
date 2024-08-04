@@ -6,6 +6,7 @@ JavaScript Promise: An introduction : https://web.dev/articles/promises
 Await: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
 Async: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 Throw / Try: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
+***
 Setup
 Install NodeJS 12.11.x
 (in your home directory):
@@ -16,13 +17,14 @@ sudo apt install nodejs -y
 $ nodejs -v
 v12.11.1
 $ npm -v
-6.11.3
+6.11.3 
+***
 Install Jest, Babel, and ESLint
 in your project directory, install Jest, Babel and ESList by using the supplied package.json and run npm install.
 
 Configuration Files
 Add the files below to your project directory
-
+***
 package.json
 Click to show/hide file contents
 
@@ -45,7 +47,7 @@ Click to show/hide file contents
     "jest": "^24.9.0"
   }
 }
-
+***
 babel.config.js
 Click to show/hide file contents
 
@@ -62,6 +64,7 @@ module.exports = {
   ],
 };
 
+***
 utils.js
 Use when you get to tasks requiring uploadPhoto and createUser.
 
@@ -82,7 +85,7 @@ export function createUser() {
   });
 }
 
-
+***
 .eslintrc.js
 Click to show/hide file contents
 
@@ -121,7 +124,7 @@ module.exports = {
     }
   ]
 };
-
+***
 and…
 Don’t forget to run $ npm install when you have the package.json
 
